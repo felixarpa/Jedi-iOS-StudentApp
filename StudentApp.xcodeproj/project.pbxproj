@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E00BC81F1E4B90F4005A182C /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00BC81E1E4B90F4005A182C /* Controller.swift */; };
+		E00BC8211E4B9489005A182C /* ModelControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00BC8201E4B9489005A182C /* ModelControllers.swift */; };
+		E00BC8231E4BAB99005A182C /* Gender.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00BC8221E4BAB99005A182C /* Gender.swift */; };
+		E00BC8251E4BABCB005A182C /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00BC8241E4BABCB005A182C /* Schedule.swift */; };
+		E00BC8271E4BC3B5005A182C /* AddCourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00BC8261E4BC3B5005A182C /* AddCourseViewController.swift */; };
+		E00BC8291E4BC3C7005A182C /* CourseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00BC8281E4BC3C7005A182C /* CourseDetailViewController.swift */; };
+		E00BC8301E4DD714005A182C /* ProfessorListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00BC82F1E4DD714005A182C /* ProfessorListViewController.swift */; };
+		E00BC8321E4DD721005A182C /* AddProfessorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00BC8311E4DD721005A182C /* AddProfessorViewController.swift */; };
+		E00BC8341E4DD72E005A182C /* ProfessorDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00BC8331E4DD72E005A182C /* ProfessorDetailViewController.swift */; };
+		E00BC8361E4DDC25005A182C /* ProfessorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00BC8351E4DDC25005A182C /* ProfessorTableViewCell.swift */; };
+		E00BC84D1E4DE9F0005A182C /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E00BC84B1E4DE9F0005A182C /* Realm.framework */; };
+		E00BC84E1E4DE9F0005A182C /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E00BC84B1E4DE9F0005A182C /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E00BC84F1E4DE9F0005A182C /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E00BC84C1E4DE9F0005A182C /* RealmSwift.framework */; };
+		E00BC8501E4DE9F0005A182C /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E00BC84C1E4DE9F0005A182C /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E00BC8531E4E1374005A182C /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = E00BC8521E4E1374005A182C /* placeholder.png */; };
+		E00BC8551E4E23D0005A182C /* SingleObjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00BC8541E4E23D0005A182C /* SingleObjectViewController.swift */; };
+		E0A61C781E4B36B10078093F /* CourseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A61C771E4B36B10078093F /* CourseTableViewCell.swift */; };
+		E0A61C7C1E4B3A780078093F /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A61C7B1E4B3A780078093F /* DataController.swift */; };
+		E0A61C7E1E4B3BC10078093F /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A61C7D1E4B3BC10078093F /* Student.swift */; };
+		E0A61C811E4B45B00078093F /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A61C801E4B45B00078093F /* Course.swift */; };
+		E0A61C831E4B45C00078093F /* Professor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A61C821E4B45C00078093F /* Professor.swift */; };
+		E0DC1B551E48D9F400E5CEE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DC1B541E48D9F400E5CEE8 /* AppDelegate.swift */; };
+		E0DC1B571E48D9F400E5CEE8 /* CourseListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DC1B561E48D9F400E5CEE8 /* CourseListViewController.swift */; };
+		E0DC1B5A1E48D9F400E5CEE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0DC1B581E48D9F400E5CEE8 /* Main.storyboard */; };
+		E0DC1B5C1E48D9F400E5CEE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0DC1B5B1E48D9F400E5CEE8 /* Assets.xcassets */; };
+		E0DC1B5F1E48D9F400E5CEE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0DC1B5D1E48D9F400E5CEE8 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E00BC8511E4DE9F0005A182C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E00BC8501E4DE9F0005A182C /* RealmSwift.framework in Embed Frameworks */,
+				E00BC84E1E4DE9F0005A182C /* Realm.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E00BC81E1E4B90F4005A182C /* Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
+		E00BC8201E4B9489005A182C /* ModelControllers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelControllers.swift; sourceTree = "<group>"; };
+		E00BC8221E4BAB99005A182C /* Gender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gender.swift; sourceTree = "<group>"; };
+		E00BC8241E4BABCB005A182C /* Schedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
+		E00BC8261E4BC3B5005A182C /* AddCourseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCourseViewController.swift; sourceTree = "<group>"; };
+		E00BC8281E4BC3C7005A182C /* CourseDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseDetailViewController.swift; sourceTree = "<group>"; };
+		E00BC82F1E4DD714005A182C /* ProfessorListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfessorListViewController.swift; sourceTree = "<group>"; };
+		E00BC8311E4DD721005A182C /* AddProfessorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddProfessorViewController.swift; sourceTree = "<group>"; };
+		E00BC8331E4DD72E005A182C /* ProfessorDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfessorDetailViewController.swift; sourceTree = "<group>"; };
+		E00BC8351E4DDC25005A182C /* ProfessorTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfessorTableViewCell.swift; sourceTree = "<group>"; };
+		E00BC84B1E4DE9F0005A182C /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
+		E00BC84C1E4DE9F0005A182C /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
+		E00BC8521E4E1374005A182C /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
+		E00BC8541E4E23D0005A182C /* SingleObjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleObjectViewController.swift; sourceTree = "<group>"; };
+		E0A61C771E4B36B10078093F /* CourseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseTableViewCell.swift; sourceTree = "<group>"; };
+		E0A61C7B1E4B3A780078093F /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		E0A61C7D1E4B3BC10078093F /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		E0A61C801E4B45B00078093F /* Course.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		E0A61C821E4B45C00078093F /* Professor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Professor.swift; sourceTree = "<group>"; };
+		E0DC1B511E48D9F400E5CEE8 /* StudentApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudentApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0DC1B541E48D9F400E5CEE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E0DC1B561E48D9F400E5CEE8 /* CourseListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseListViewController.swift; sourceTree = "<group>"; };
+		E0DC1B591E48D9F400E5CEE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E0DC1B5B1E48D9F400E5CEE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E0DC1B5E1E48D9F400E5CEE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E0DC1B601E48D9F400E5CEE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E0DC1B4E1E48D9F400E5CEE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E00BC84F1E4DE9F0005A182C /* RealmSwift.framework in Frameworks */,
+				E00BC84D1E4DE9F0005A182C /* Realm.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E00BC82A1E4BC44A005A182C /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				E00BC82B1E4BC451005A182C /* Controller */,
+				E0A61C7F1E4B42FC0078093F /* Model */,
+				E0A61C7A1E4B3A540078093F /* Data */,
+			);
+			name = Domain;
+			sourceTree = "<group>";
+		};
+		E00BC82B1E4BC451005A182C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E00BC81E1E4B90F4005A182C /* Controller.swift */,
+				E00BC8201E4B9489005A182C /* ModelControllers.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		E00BC82C1E4BC457005A182C /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				E00BC82E1E4BC485005A182C /* Controller */,
+				E00BC82D1E4BC47F005A182C /* View */,
+			);
+			name = Presentation;
+			sourceTree = "<group>";
+		};
+		E00BC82D1E4BC47F005A182C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E0A61C771E4B36B10078093F /* CourseTableViewCell.swift */,
+				E00BC8351E4DDC25005A182C /* ProfessorTableViewCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		E00BC82E1E4BC485005A182C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E0DC1B541E48D9F400E5CEE8 /* AppDelegate.swift */,
+				E00BC8541E4E23D0005A182C /* SingleObjectViewController.swift */,
+				E0DC1B661E49EA6400E5CEE8 /* Course */,
+				E0DC1B671E49EA6F00E5CEE8 /* Professor */,
+				E0F090A91E538A37004A4202 /* Student */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		E0A61C791E4B3A490078093F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E00BC8521E4E1374005A182C /* placeholder.png */,
+				E0DC1B581E48D9F400E5CEE8 /* Main.storyboard */,
+				E0DC1B5B1E48D9F400E5CEE8 /* Assets.xcassets */,
+				E0DC1B5D1E48D9F400E5CEE8 /* LaunchScreen.storyboard */,
+				E0DC1B601E48D9F400E5CEE8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E0A61C7A1E4B3A540078093F /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				E0A61C7B1E4B3A780078093F /* DataController.swift */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		E0A61C7F1E4B42FC0078093F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E0A61C7D1E4B3BC10078093F /* Student.swift */,
+				E0A61C801E4B45B00078093F /* Course.swift */,
+				E00BC8241E4BABCB005A182C /* Schedule.swift */,
+				E0A61C821E4B45C00078093F /* Professor.swift */,
+				E00BC8221E4BAB99005A182C /* Gender.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		E0A61C841E4B47DB0078093F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E00BC84B1E4DE9F0005A182C /* Realm.framework */,
+				E00BC84C1E4DE9F0005A182C /* RealmSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E0DC1B481E48D9F400E5CEE8 = {
+			isa = PBXGroup;
+			children = (
+				E0DC1B531E48D9F400E5CEE8 /* StudentApp */,
+				E0DC1B521E48D9F400E5CEE8 /* Products */,
+				E0A61C841E4B47DB0078093F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E0DC1B521E48D9F400E5CEE8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E0DC1B511E48D9F400E5CEE8 /* StudentApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E0DC1B531E48D9F400E5CEE8 /* StudentApp */ = {
+			isa = PBXGroup;
+			children = (
+				E00BC82A1E4BC44A005A182C /* Domain */,
+				E00BC82C1E4BC457005A182C /* Presentation */,
+				E0A61C791E4B3A490078093F /* Supporting Files */,
+			);
+			path = StudentApp;
+			sourceTree = "<group>";
+		};
+		E0DC1B661E49EA6400E5CEE8 /* Course */ = {
+			isa = PBXGroup;
+			children = (
+				E0DC1B561E48D9F400E5CEE8 /* CourseListViewController.swift */,
+				E00BC8261E4BC3B5005A182C /* AddCourseViewController.swift */,
+				E00BC8281E4BC3C7005A182C /* CourseDetailViewController.swift */,
+			);
+			name = Course;
+			sourceTree = "<group>";
+		};
+		E0DC1B671E49EA6F00E5CEE8 /* Professor */ = {
+			isa = PBXGroup;
+			children = (
+				E00BC82F1E4DD714005A182C /* ProfessorListViewController.swift */,
+				E00BC8311E4DD721005A182C /* AddProfessorViewController.swift */,
+				E00BC8331E4DD72E005A182C /* ProfessorDetailViewController.swift */,
+			);
+			name = Professor;
+			sourceTree = "<group>";
+		};
+		E0F090A91E538A37004A4202 /* Student */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Student;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E0DC1B501E48D9F400E5CEE8 /* StudentApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0DC1B631E48D9F400E5CEE8 /* Build configuration list for PBXNativeTarget "StudentApp" */;
+			buildPhases = (
+				E0DC1B4D1E48D9F400E5CEE8 /* Sources */,
+				E0DC1B4E1E48D9F400E5CEE8 /* Frameworks */,
+				E0DC1B4F1E48D9F400E5CEE8 /* Resources */,
+				E00BC8511E4DE9F0005A182C /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StudentApp;
+			productName = StudentApp;
+			productReference = E0DC1B511E48D9F400E5CEE8 /* StudentApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E0DC1B491E48D9F400E5CEE8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Fèlix Arribas";
+				TargetAttributes = {
+					E0DC1B501E48D9F400E5CEE8 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E0DC1B4C1E48D9F400E5CEE8 /* Build configuration list for PBXProject "StudentApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E0DC1B481E48D9F400E5CEE8;
+			productRefGroup = E0DC1B521E48D9F400E5CEE8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E0DC1B501E48D9F400E5CEE8 /* StudentApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E0DC1B4F1E48D9F400E5CEE8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0DC1B5F1E48D9F400E5CEE8 /* LaunchScreen.storyboard in Resources */,
+				E00BC8531E4E1374005A182C /* placeholder.png in Resources */,
+				E0DC1B5C1E48D9F400E5CEE8 /* Assets.xcassets in Resources */,
+				E0DC1B5A1E48D9F400E5CEE8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E0DC1B4D1E48D9F400E5CEE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0A61C831E4B45C00078093F /* Professor.swift in Sources */,
+				E00BC8291E4BC3C7005A182C /* CourseDetailViewController.swift in Sources */,
+				E00BC8301E4DD714005A182C /* ProfessorListViewController.swift in Sources */,
+				E00BC8321E4DD721005A182C /* AddProfessorViewController.swift in Sources */,
+				E00BC8361E4DDC25005A182C /* ProfessorTableViewCell.swift in Sources */,
+				E00BC8271E4BC3B5005A182C /* AddCourseViewController.swift in Sources */,
+				E00BC8211E4B9489005A182C /* ModelControllers.swift in Sources */,
+				E00BC8251E4BABCB005A182C /* Schedule.swift in Sources */,
+				E0A61C811E4B45B00078093F /* Course.swift in Sources */,
+				E0DC1B571E48D9F400E5CEE8 /* CourseListViewController.swift in Sources */,
+				E00BC8551E4E23D0005A182C /* SingleObjectViewController.swift in Sources */,
+				E0A61C7C1E4B3A780078093F /* DataController.swift in Sources */,
+				E0DC1B551E48D9F400E5CEE8 /* AppDelegate.swift in Sources */,
+				E00BC8341E4DD72E005A182C /* ProfessorDetailViewController.swift in Sources */,
+				E00BC8231E4BAB99005A182C /* Gender.swift in Sources */,
+				E0A61C7E1E4B3BC10078093F /* Student.swift in Sources */,
+				E0A61C781E4B36B10078093F /* CourseTableViewCell.swift in Sources */,
+				E00BC81F1E4B90F4005A182C /* Controller.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E0DC1B581E48D9F400E5CEE8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E0DC1B591E48D9F400E5CEE8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E0DC1B5D1E48D9F400E5CEE8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E0DC1B5E1E48D9F400E5CEE8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E0DC1B611E48D9F400E5CEE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E0DC1B621E48D9F400E5CEE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E0DC1B641E48D9F400E5CEE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = StudentApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.StudentApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		E0DC1B651E48D9F400E5CEE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = StudentApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.StudentApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E0DC1B4C1E48D9F400E5CEE8 /* Build configuration list for PBXProject "StudentApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0DC1B611E48D9F400E5CEE8 /* Debug */,
+				E0DC1B621E48D9F400E5CEE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0DC1B631E48D9F400E5CEE8 /* Build configuration list for PBXNativeTarget "StudentApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0DC1B641E48D9F400E5CEE8 /* Debug */,
+				E0DC1B651E48D9F400E5CEE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E0DC1B491E48D9F400E5CEE8 /* Project object */;
+}
