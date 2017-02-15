@@ -33,6 +33,7 @@
 		E0DC1B5A1E48D9F400E5CEE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0DC1B581E48D9F400E5CEE8 /* Main.storyboard */; };
 		E0DC1B5C1E48D9F400E5CEE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0DC1B5B1E48D9F400E5CEE8 /* Assets.xcassets */; };
 		E0DC1B5F1E48D9F400E5CEE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0DC1B5D1E48D9F400E5CEE8 /* LaunchScreen.storyboard */; };
+		E0F090AB1E547238004A4202 /* AddToListDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F090AA1E547238004A4202 /* AddToListDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -77,6 +78,7 @@
 		E0DC1B5B1E48D9F400E5CEE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E0DC1B5E1E48D9F400E5CEE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E0DC1B601E48D9F400E5CEE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0F090AA1E547238004A4202 /* AddToListDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddToListDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 			children = (
 				E0DC1B541E48D9F400E5CEE8 /* AppDelegate.swift */,
 				E00BC8541E4E23D0005A182C /* SingleObjectViewController.swift */,
+				E0F090AA1E547238004A4202 /* AddToListDelegate.swift */,
 				E0DC1B661E49EA6400E5CEE8 /* Course */,
 				E0DC1B671E49EA6F00E5CEE8 /* Professor */,
 				E0F090A91E538A37004A4202 /* Student */,
@@ -314,6 +317,7 @@
 				E00BC8291E4BC3C7005A182C /* CourseDetailViewController.swift in Sources */,
 				E00BC8301E4DD714005A182C /* ProfessorListViewController.swift in Sources */,
 				E00BC8321E4DD721005A182C /* AddProfessorViewController.swift in Sources */,
+				E0F090AB1E547238004A4202 /* AddToListDelegate.swift in Sources */,
 				E00BC8361E4DDC25005A182C /* ProfessorTableViewCell.swift in Sources */,
 				E00BC8271E4BC3B5005A182C /* AddCourseViewController.swift in Sources */,
 				E00BC8211E4B9489005A182C /* ModelControllers.swift in Sources */,

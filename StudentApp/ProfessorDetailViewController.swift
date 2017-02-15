@@ -10,17 +10,32 @@ import UIKit
 
 class ProfessorDetailViewController: SingleObjectViewController {
     
-    var professor: Professor?
+    var professor: Professor!
+    
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var birthDateLabel: UILabel!
+    @IBOutlet weak var genderLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
+    
+    override func setUpView() {
+        super.setUpView()
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        self.mainImageView.image = UIImage(data: (self.professor.image)!)
+        self.nameLabel.text = self.professor.fullName
+        self.birthDateLabel.text = self.professor.birthDate
+        
+        var gender = "--"
+        if self.professor.gender == Gender.female {
+            gender = "Mujer"
+        } else if self.professor.gender == Gender.male {
+            gender = "Hombre"
+        }
+        
+        self.genderLabel.text = gender
+ 
     }
 
 }

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ProfessorListViewController: UITableViewController {
+class ProfessorListViewController: UIViewController {
     
     @IBOutlet var professorTableView: UITableView!
     
@@ -27,22 +27,31 @@ class ProfessorListViewController: UITableViewController {
         if segue.identifier == "show_professor" {
             let index = self.professorTableView.indexPathForSelectedRow?.row
             let professorDetailViewController = segue.destination as! ProfessorDetailViewController
-            professorDetailViewController.professor = DataController.professor.at(index: index!)
+            let professor = DataController.professor.at(index: index!)
+            professorDetailViewController.professor = professor
         } else if segue.identifier == "add_professor" {
-            
+            let addProfessorViewController = segue.destination as! AddProfessorViewController
+            addProfessorViewController.delegate = self
         }
     }
     
-    override func numberOfSections(in tableView: UITableView) -> Int {
+}
+
+extension ProfessorListViewController: UITableViewDelegate, UITableViewDataSource {
+
+    func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return DataController.professor.all().count
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = self.professorTableView.dequeueReusableCell(withIdentifier: "professor_cell") as! ProfessorTableViewCell
+        
+        cell.professorImage.layer.cornerRadius = cell.professorImage.layer.frame.size.height / 2
+        cell.professorImage.clipsToBounds = true
         
         let professor = DataController.professor.at(index: indexPath.row)
         cell.professorImage.image = UIImage(data: professor.image!)
@@ -51,5 +60,15 @@ class ProfessorListViewController: UITableViewController {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+    }
+    
+}
+
+extension ProfessorListViewController: AddToListDelegate {
+    func added() {
+        self.professorTableView.reloadData()
+    }
 }
 

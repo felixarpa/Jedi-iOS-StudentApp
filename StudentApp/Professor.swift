@@ -14,14 +14,14 @@ class Professor: Object {
     dynamic var name: String?
     dynamic var surname: String?
     dynamic var gender: Int = Gender.no // 0 = female, 1 = male
-    dynamic var birthDate: Date?
+    dynamic var birthDate: String?
     dynamic var image: Data?
     
     var fullName: String {
-        return "\(self.name) \(self.surname)"
+        return "\(self.name!) \(self.surname!)"
     }
     
-    convenience init(name: String, surname: String, gender: Int, birthDate: Date, image: Data) {
+    convenience init(name: String, surname: String, gender: Int, birthDate: String, image: Data) {
         self.init()
         self.name = name
         self.surname = surname

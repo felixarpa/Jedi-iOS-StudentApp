@@ -18,6 +18,10 @@ class Student: Object {
     dynamic var birthDate: Date?
     dynamic var image: Data?
     
+    var fullName: String {
+        return "\(self.name!) \(self.surname!)"
+    }
+    
     convenience init(name: String, surname: String, gender: Int, paid: Bool, birthDate: Date, image: Data) {
         self.init()
         self.name = name
