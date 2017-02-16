@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CourseListViewController: UITableViewController {
+class CourseListViewController: UIViewController {
     
     @IBOutlet var courseTableView: UITableView!
     
@@ -26,24 +26,33 @@ class CourseListViewController: UITableViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "show_course" {
+            print("SHOW COURSE!")
             let index = self.courseTableView.indexPathForSelectedRow?.row
             let courseDetailViewController = segue.destination as! CourseDatailViewController
-            courseDetailViewController.course = DataController.course.at(index: index!)
+            courseDetailViewController.index = index
         } else if segue.identifier == "add_course" {
-            
+            let addCourseViewController = segue.destination as! AddCourseViewController
+            addCourseViewController.delegate = self
         }
     }
     
-    override func numberOfSections(in tableView: UITableView) -> Int {
+}
+
+extension CourseListViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return DataController.course.all().count
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = self.courseTableView.dequeueReusableCell(withIdentifier: "course_cell") as! CourseTableViewCell
+        
+        cell.mainImageView.layer.cornerRadius = cell.mainImageView.layer.frame.size.height / 2
+        cell.mainImageView.clipsToBounds = true
         
         let course = DataController.course.at(index: indexPath.row)
         cell.mainImageView.image = UIImage(data: course.image!)
@@ -53,5 +62,15 @@ class CourseListViewController: UITableViewController {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+    }
+    
+}
+
+extension CourseListViewController: AddToListDelegate {
+    func added() {
+        self.courseTableView.reloadData()
+    }
 }
 

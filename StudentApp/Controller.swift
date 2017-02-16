@@ -16,7 +16,7 @@ protocol Controller {
     
     func all() -> [T]
     func at(index: Int) -> T
-    func add(element: T)
+    func add(_ element: T)
 
 }
 

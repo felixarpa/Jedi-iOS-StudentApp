@@ -16,7 +16,7 @@ class SingleObjectViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setUpView()
+        self.setUpView()
     }
     
     func setUpView() {

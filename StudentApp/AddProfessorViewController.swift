@@ -46,7 +46,7 @@ class AddProfessorViewController: SingleObjectViewController {
             image: self.imageData!
         )
         
-        DataController.professor.add(element: professor)
+        DataController.professor.add(professor)
         
         self.delegate?.added()
         

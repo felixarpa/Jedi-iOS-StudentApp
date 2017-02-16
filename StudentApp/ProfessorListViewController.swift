@@ -27,8 +27,7 @@ class ProfessorListViewController: UIViewController {
         if segue.identifier == "show_professor" {
             let index = self.professorTableView.indexPathForSelectedRow?.row
             let professorDetailViewController = segue.destination as! ProfessorDetailViewController
-            let professor = DataController.professor.at(index: index!)
-            professorDetailViewController.professor = professor
+            professorDetailViewController.index = index!
         } else if segue.identifier == "add_professor" {
             let addProfessorViewController = segue.destination as! AddProfessorViewController
             addProfessorViewController.delegate = self

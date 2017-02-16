@@ -21,7 +21,7 @@ class ModelContoller<T: Object>: Controller {
         return all()[index]
     }
     
-    func add(element: T) {
+    func add(_ element: T) {
         try! self.realm.write {
             self.realm.add(element)
         }

@@ -10,27 +10,30 @@ import UIKit
 
 class ProfessorDetailViewController: SingleObjectViewController {
     
-    var professor: Professor!
-    
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var birthDateLabel: UILabel!
     @IBOutlet weak var genderLabel: UILabel!
+    
+    var index: Int?
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.setUpData()
     }
     
-    override func setUpView() {
-        super.setUpView()
+    func setUpData() {
+        
+        let professor = DataController.professor.at(index: index!)
 
-        self.mainImageView.image = UIImage(data: (self.professor.image)!)
-        self.nameLabel.text = self.professor.fullName
-        self.birthDateLabel.text = self.professor.birthDate
+        self.mainImageView.image = UIImage(data: (professor.image)!)
+        self.nameLabel.text = professor.fullName
+        self.birthDateLabel.text = professor.birthDate
         
         var gender = "--"
-        if self.professor.gender == Gender.female {
+        if professor.gender == Gender.female {
             gender = "Mujer"
-        } else if self.professor.gender == Gender.male {
+        } else if professor.gender == Gender.male {
             gender = "Hombre"
         }
         

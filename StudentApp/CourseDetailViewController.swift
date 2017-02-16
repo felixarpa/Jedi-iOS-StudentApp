@@ -17,13 +17,13 @@ class CourseDatailViewController: SingleObjectViewController {
     @IBOutlet weak var professorImageView: UIImageView!
     @IBOutlet weak var professorLabel: UILabel!
     
-    var course: Course?
+    var index: Int?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setUpView()
-        setUpData()
+        self.setUpView()
+        self.setUpData()
     }
     
     override func setUpView() {
@@ -33,12 +33,15 @@ class CourseDatailViewController: SingleObjectViewController {
     }
     
     func setUpData() {
-        self.mainImageView.image = UIImage(data: (course?.image)!)
-        self.titleLabel.text = course?.title
-        self.initialLabel.text = course?.schedule?.initial
-        self.finalLabel.text = course?.schedule?.final
-        self.professorImageView.image = UIImage(data: (course?.professor?.image)!)
-        self.professorLabel.text = course?.professor?.fullName
+        
+        let course = DataController.course.at(index: index!)
+        
+        self.mainImageView.image = UIImage(data: (course.image)!)
+        self.titleLabel.text = course.title
+        self.initialLabel.text = course.schedule?.initial
+        self.finalLabel.text = course.schedule?.final
+        self.professorImageView.image = UIImage(data: (course.professor?.image)!)
+        self.professorLabel.text = course.professor?.fullName
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

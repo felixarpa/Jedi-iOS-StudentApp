@@ -28,10 +28,10 @@ class Schedule: Object {
     }
     
     var initial: String {
-        return "\(initialHour):00 \(initialTime)"
+        return "\(initialHour):00 \(initialTime!)"
     }
     
     var final: String {
-        return "\(finalHour):00 \(finalTime)"
+        return "\(finalHour):00 \(finalTime!)"
     }
 }
