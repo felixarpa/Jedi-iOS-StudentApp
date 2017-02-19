@@ -15,7 +15,6 @@ class CourseListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
         self.courseTableView.delegate = self
         self.courseTableView.dataSource = self
     }
@@ -26,7 +25,6 @@ class CourseListViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "show_course" {
-            print("SHOW COURSE!")
             let index = self.courseTableView.indexPathForSelectedRow?.row
             let courseDetailViewController = segue.destination as! CourseDatailViewController
             courseDetailViewController.index = index

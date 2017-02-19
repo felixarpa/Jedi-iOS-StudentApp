@@ -23,6 +23,8 @@
 		E00BC8501E4DE9F0005A182C /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E00BC84C1E4DE9F0005A182C /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E00BC8531E4E1374005A182C /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = E00BC8521E4E1374005A182C /* placeholder.png */; };
 		E00BC8551E4E23D0005A182C /* SingleObjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00BC8541E4E23D0005A182C /* SingleObjectViewController.swift */; };
+		E08761271E58DABF000AFF5A /* StudentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08761261E58DABF000AFF5A /* StudentsViewController.swift */; };
+		E08761291E58DC8A000AFF5A /* StudentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08761281E58DC8A000AFF5A /* StudentTableViewCell.swift */; };
 		E0A61C781E4B36B10078093F /* CourseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A61C771E4B36B10078093F /* CourseTableViewCell.swift */; };
 		E0A61C7C1E4B3A780078093F /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A61C7B1E4B3A780078093F /* DataController.swift */; };
 		E0A61C7E1E4B3BC10078093F /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A61C7D1E4B3BC10078093F /* Student.swift */; };
@@ -66,6 +68,8 @@
 		E00BC84C1E4DE9F0005A182C /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
 		E00BC8521E4E1374005A182C /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
 		E00BC8541E4E23D0005A182C /* SingleObjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleObjectViewController.swift; sourceTree = "<group>"; };
+		E08761261E58DABF000AFF5A /* StudentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentsViewController.swift; sourceTree = "<group>"; };
+		E08761281E58DC8A000AFF5A /* StudentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentTableViewCell.swift; sourceTree = "<group>"; };
 		E0A61C771E4B36B10078093F /* CourseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseTableViewCell.swift; sourceTree = "<group>"; };
 		E0A61C7B1E4B3A780078093F /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		E0A61C7D1E4B3BC10078093F /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
@@ -127,6 +131,7 @@
 			children = (
 				E0A61C771E4B36B10078093F /* CourseTableViewCell.swift */,
 				E00BC8351E4DDC25005A182C /* ProfessorTableViewCell.swift */,
+				E08761281E58DC8A000AFF5A /* StudentTableViewCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -235,6 +240,7 @@
 		E0F090A91E538A37004A4202 /* Student */ = {
 			isa = PBXGroup;
 			children = (
+				E08761261E58DABF000AFF5A /* StudentsViewController.swift */,
 			);
 			name = Student;
 			sourceTree = "<group>";
@@ -321,8 +327,10 @@
 				E00BC8361E4DDC25005A182C /* ProfessorTableViewCell.swift in Sources */,
 				E00BC8271E4BC3B5005A182C /* AddCourseViewController.swift in Sources */,
 				E00BC8211E4B9489005A182C /* ModelControllers.swift in Sources */,
+				E08761271E58DABF000AFF5A /* StudentsViewController.swift in Sources */,
 				E00BC8251E4BABCB005A182C /* Schedule.swift in Sources */,
 				E0A61C811E4B45B00078093F /* Course.swift in Sources */,
+				E08761291E58DC8A000AFF5A /* StudentTableViewCell.swift in Sources */,
 				E0DC1B571E48D9F400E5CEE8 /* CourseListViewController.swift in Sources */,
 				E00BC8551E4E23D0005A182C /* SingleObjectViewController.swift in Sources */,
 				E0A61C7C1E4B3A780078093F /* DataController.swift in Sources */,

@@ -34,7 +34,7 @@ class CourseDatailViewController: SingleObjectViewController {
     
     func setUpData() {
         
-        let course = DataController.course.at(index: index!)
+        let course = DataController.course.at(index: self.index!)
         
         self.mainImageView.image = UIImage(data: (course.image)!)
         self.titleLabel.text = course.title
@@ -46,7 +46,13 @@ class CourseDatailViewController: SingleObjectViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "show_students" {
-            
+            let studentsViewController = segue.destination as! StudentsViewController
+            studentsViewController.index = self.index!
+            let students = DataController.course.at(index: self.index!).students
+            for student in students {
+                print("\(student.fullName!) // \(student.grade!)")
+            }
+            //studentsViewController.studentsList = students
         }
     }
 
